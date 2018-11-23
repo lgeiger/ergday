@@ -1,3 +1,4 @@
+import Head from "next/head";
 import * as React from "react";
 const randomInt = require("random-int");
 
@@ -6,6 +7,36 @@ function getRandomWorkout() {
   const index = randomInt(0, workouts.length - 1);
   return workouts[index];
 }
+
+const Workout = ({ workout }) => (
+  <div>
+    <h3>{workout.title}</h3>
+    <ul>
+      {workout.program.map(item => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+    <style jsx>{`
+      h3 {
+        margin: 0;
+        font-size: 5vh;
+        margin-block-start: 1em;
+      }
+      div {
+        width: fit-content;
+        margin: auto;
+      }
+      ul {
+        font-size: 5vh;
+        list-style-type: none;
+        padding: 0;
+        margin-block-start: 1em;
+        margin-block-end: 0;
+        line-height: 1.3;
+      }
+    `}</style>
+  </div>
+);
 
 export default class extends React.Component {
   static async getInitialProps() {
@@ -16,15 +47,29 @@ export default class extends React.Component {
   render() {
     return (
       <div>
+        <Head>
+          <title>Workout of the day</title>
+        </Head>
         <h1>Workout of the day</h1>
-        <div>
-          <h2>{this.props.workout.title}</h2>
-          <ul>
-            {this.props.workout.program.map(item => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        <Workout workout={this.props.workout} />
+        <style global jsx>{`
+          body {
+            background: #00bcd4;
+            font-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI,
+              Oxygen, Helvetica Neue, sans-serif;
+            margin: 0;
+            text-align: center;
+          }
+        `}</style>
+        <style jsx>{`
+          h1 {
+            color: white;
+            font-size: 8vw;
+            text-transform: uppercase;
+            margin: 0;
+            padding-top: 0.5em;
+          }
+        `}</style>
       </div>
     );
   }
