@@ -1,8 +1,10 @@
 import * as React from "react";
+const randomInt = require("random-int");
 
 function getRandomWorkout() {
   const workouts = require("../data/programs.json");
-  return workouts[0];
+  const index = randomInt(0, workouts.length - 1);
+  return workouts[index];
 }
 
 export default class extends React.Component {
