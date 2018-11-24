@@ -33,5 +33,17 @@
       "all out",
       "1 min rest"
     ]
+  },
+  {
+    "title": "2k prep - Intervall",
+    "program": [
+      "500m   @2k pace       @28 SPM    1min rest",
+      "400m   @2k pace -2    @29 SPM    1min rest",
+      "300m   @2k pace -4    @30 SPM    1min rest",
+      "200m   @2k pace -6    @31 SPM    1min rest",
+      "100m   max power      @32 SPM    5min rest",
+      " ",
+      "2x"
+    ]
   }
 ]
