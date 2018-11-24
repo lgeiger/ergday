@@ -1,5 +1,6 @@
 {
   "version": 2,
   "alias": ["ergday"],
+  "regions": ["bru"],
   "builds": [{ "src": "next.config.js", "use": "@now/next" }]
 }
