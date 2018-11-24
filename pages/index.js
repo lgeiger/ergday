@@ -56,6 +56,7 @@ export default class extends Component {
       <div>
         <Head>
           <title>Workout of the day</title>
+          <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
         </Head>
         <h1>Workout of the day</h1>
         <Workout workout={this.props.workout} />
