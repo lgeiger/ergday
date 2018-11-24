@@ -60,6 +60,9 @@ export default class extends Component {
         </Head>
         <h1>Workout of the day</h1>
         <Workout workout={this.props.workout} />
+        <a href="https://github.com/lgeiger/ergday#add-a-new-workout">
+          suggest a new workout
+        </a>
         <style global jsx>{`
           body {
             background: #00bcd4;
@@ -76,6 +79,20 @@ export default class extends Component {
             text-transform: uppercase;
             margin: 0;
             padding-top: 0.5em;
+          }
+
+          a {
+            color: white;
+            opacity: 0.5;
+            transition: 0.25s;
+            text-decoration: none;
+            position: absolute;
+            bottom: 1em;
+            right: 1em;
+          }
+
+          a:hover {
+            opacity: 1;
           }
         `}</style>
       </div>
