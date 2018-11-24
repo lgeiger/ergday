@@ -56,7 +56,7 @@ export default class extends Component {
       <div>
         <Head>
           <title>Workout of the day</title>
-          <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+          <link rel="icon" prefetch=true ref="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f4aa.png" />
         </Head>
         <h1>Workout of the day</h1>
         <Workout workout={this.props.workout} />
