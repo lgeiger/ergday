@@ -1,10 +1,18 @@
 import Head from "next/head";
-import * as React from "react";
-const randomInt = require("random-int");
+import { Component } from "react";
+import seedrandom from "seedrandom";
+
+function getRandomInt(random, min, max) {
+  // The maximum is exclusive and the minimum is inclusive
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(random * (max - min)) + min;
+}
 
 function getRandomWorkout() {
-  const index = randomInt(0, workouts.length - 1);
   const workouts = require("../data/workouts.json");
+  const day = new Date().toLocaleDateString();
+  const index = getRandomInt(seedrandom(day)(), 0, workouts.length);
   return workouts[index];
 }
 
@@ -12,8 +20,8 @@ const Workout = ({ workout }) => (
   <div>
     <h3>{workout.title}</h3>
     <ul>
-      {workout.program.map(item => (
-        <li key={item}>{item}</li>
+      {workout.program.map((item, i) => (
+        <li key={`${item}-${i}`}>{item}</li>
       ))}
     </ul>
     <style jsx>{`
@@ -38,7 +46,7 @@ const Workout = ({ workout }) => (
   </div>
 );
 
-export default class extends React.Component {
+export default class extends Component {
   static async getInitialProps() {
     const workout = getRandomWorkout();
     return { workout };
