@@ -18,7 +18,7 @@ function getRandomWorkout() {
 
 const Workout = ({ workout }) => (
   <div>
-    <h3>{workout.title}</h3>
+    <h3>{`💪 ${workout.title} 💪`}</h3>
     <ul>
       {workout.program.map((item, i) => (
         <li key={`${item}-${i}`}>{item}</li>
