@@ -3,8 +3,8 @@ import * as React from "react";
 const randomInt = require("random-int");
 
 function getRandomWorkout() {
-  const workouts = require("../data/programs.json");
   const index = randomInt(0, workouts.length - 1);
+  const workouts = require("../data/workouts.json");
   return workouts[index];
 }
 
