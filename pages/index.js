@@ -27,15 +27,14 @@ const Workout = ({ workout }) => (
     <style jsx>{`
       h3 {
         margin: 0;
-        font-size: 5vh;
         margin-block-start: 1em;
       }
       div {
         width: fit-content;
         margin: auto;
+        font-size: 5vh;
       }
       ul {
-        font-size: 5vh;
         list-style-type: none;
         padding: 0;
         margin-block-start: 1em;
