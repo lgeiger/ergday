@@ -1,9 +1,5 @@
 {
-  "version": 2,
+  "version": 1,
   "alias": ["ergday"],
-  "regions": ["bru"],
-  "builds": [
-    { "src": "next.config.js", "use": "@now/next" },
-    { "src": "static/favicon.ico", "use": "@now/static" }
-  ]
+  "regions": ["bru"]
 }
