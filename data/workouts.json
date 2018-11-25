@@ -37,6 +37,7 @@
   {
     "title": "2k prep - Intervall",
     "program": [
+      "10 min easy warmup",
       "500m   @2k pace       @28 SPM    1min rest",
       "400m   @2k pace -2    @29 SPM    1min rest",
       "300m   @2k pace -4    @30 SPM    1min rest",
@@ -45,5 +46,33 @@
       " ",
       "2x"
     ]
+  },
+  {
+    "title": "Easy Intervall",
+    "program": [
+      "20 min   @Exa      @20 SPM     2min rest",
+      "6 min    @Exa -4   @22 SPM     2min rest",
+      "20 min   @Exa      @20 SPM     2min rest",
+      "6 min    @Exa -8   @24 SPM"
+    ]
+  },
+  {
+    "title": "Power Hour"
+    "program": [
+      "5 min    @6k pace +12   @19 SPM",
+      "15 min   @6k pace +6    @24 SPM",
+      "5 min    @6k pace +12   @19 SPM",
+      "15 min   @6k pace +6    @24 SPM",
+      "5 min    @6k pace +12   @19 SPM",
+      "15 min   @6k pace +6    @24 SPM"
+    ]
+  },
+  {
+    "title": "8x 1min"
+    "program": [
+      "8x 1min    @max Power    @32+ SPM",
+      "2 min rest"
+    ]
   }
-]
+  
+      
