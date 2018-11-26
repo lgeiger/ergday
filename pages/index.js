@@ -60,8 +60,8 @@ export default class extends Component {
         </Head>
         <h1>Workout of the day</h1>
         <Workout workout={this.props.workout} />
-        <a href="https://github.com/lgeiger/ergday#add-a-new-workout">
-          suggest a new workout
+        <a href="https://ergday.now.sh">
+          Too hard? Com back tomorrow!
         </a>
         <style global jsx>{`
           body {
