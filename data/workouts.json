@@ -20,7 +20,7 @@
     ]
   },
   {
-    "title": "Make your Coxwain fast again",
+    "title": "Make your crew mates fast again",
     "program": [
       "90 min steady state"
     ]
@@ -45,5 +45,61 @@
       " ",
       "2x"
     ]
-  }
+  },
+  {
+    "title": "Wonder what your 2k pace is? Just try it",
+    "program": [
+      "20 min easy warm-up",
+      "2000m"
+    ]
+  },
+  {
+    "title": "6k prep",
+    "program": [
+      "10 min easy warm-up",
+      "8 x 3 min 2k pace + 4s",
+      "2 min rest"
+    ]
+  },
+  {
+    "title": "Hour of Power",
+    "program": [
+      "easy warm-up",
+      "1 hour max meters"
+    ]
+  },
+  {
+    "title": "Easy Intervall",
+    "program": [
+      "20 min @exa @ 20 SPM 20 min rest",
+      "6 min @exa @ 20 -4 SPM 22 min rest",
+      "20 min @exa @ 20 SPM 20 min rest",
+      "6 min @exa @ 20 -8 SPM 24"
+    ]
+  },
+  {
+    "title": "Power Hour",
+    "program": [
+      "5 min @ 6k pace +12  @ 19 SPM",
+      "15 min @ 6k pace +6  @ 24 SPM",
+      "5 min @ 6k pace +12  @ 19 SPM",
+      "15 min @ 6k pace +6  @ 24 SPM",
+      "5 min @ 6k pace +12  @ 19 SPM",
+      "15 min @ 6k pace +6  @ 24 SPM"
+    ]
+  },
+  {
+    "title": "8 x 1 min",
+    "program": [
+      "easy warm-up",
+      "8 x 1 min all out"
+    ]
+  },
+  {
+    "title": "Dirty Thirty",
+    "program": [
+      "easy warm-up",
+      "30 min @ SPM 20 all out"
+    ]
+  }  
 ]
